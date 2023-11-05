@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-const productRoute = require("./routes/productRoute");
+const clientRoute = require("./routes/clientRoute");
 const errorMiddleware = require("./middleware/errorMiddleware");
 const cors = require("cors");
 
@@ -30,9 +30,9 @@ app.use(express.urlencoded({ extended: false }));
 
 //routes
 
-app.use("/api/products", productRoute);
+app.use("/api/clients", clientRoute);
 app.get("/", (req, res) => {
-  res.send("Hello world, thank you geodevcodes");
+  res.send("Hello world, welcome to geodevcodes API, thank you geodevcodes");
 });
 app.get("/blog", (req, res) => {
   res.send("Hello world, thank you Rasheed blog route");
