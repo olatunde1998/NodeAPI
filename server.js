@@ -11,6 +11,8 @@ const MONGO_URL = process.env.MONGO_URL;
 const PORT = process.env.PORT || 3000;
 const FRONTEND = process.env.FRONTEND;
 
+console.log(FRONTEND, "frontend link =======")
+
 var corsOptions = {
   // origin: 'http://localhost:3000',
   // origin: 'https://travel-manager-app.vercel.app',
@@ -18,8 +20,6 @@ var corsOptions = {
     "https://travel-manager-app.vercel.app",
     "http://localhost:3000",
     "http://localhost:3001",
-    "http://localhost:3002",
-    "https://travel-manager-app-jade.vercel.app",
     FRONTEND,
   ], // this is for multiple url you wish
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
