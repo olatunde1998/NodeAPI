@@ -4,8 +4,9 @@
 <hr />
 </div>
 
+# API FEATURES 
 Hello, 👋 
-NodeAPI API endpoints is used performing any CRUD web application
+NodeAPI API endpoints is used performing any CRUD (Create, Read, Update and Delete) web application
 
 # Technologies 
 
@@ -15,7 +16,8 @@ NodeAPI API endpoints is used performing any CRUD web application
  + [MongoDB](https://www.mongodb.com/) 
  + [Express](https://expressjs.com/) 
  + [Mongoose](https://www.npmjs.com/package/mongoose) 
-
+ + [PostMan](https://www.postman.com/) 
+ + [Insomia](https://insomnia.rest/download) 
  
 # How to Contribute
 
