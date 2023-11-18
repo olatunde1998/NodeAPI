@@ -13,14 +13,15 @@ const FRONTEND = process.env.FRONTEND;
 
 var corsOptions = {
   // origin: 'http://localhost:3000',
-  origin: FRONTEND,
-  // origin: [
-  //   "http://localhost:3000",
-  //   "http://localhost:3001",
-  //   "http://localhost:3002",
-  //   "https://travel-manager-app-jade.vercel.app",
-  //   FRONTEND,
-  // ], // this is for multiple url you wish
+  // origin: 'https://travel-manager-app.vercel.app',
+  origin: [
+    "https://travel-manager-app.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://localhost:3002",
+    "https://travel-manager-app-jade.vercel.app",
+    FRONTEND,
+  ], // this is for multiple url you wish
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
