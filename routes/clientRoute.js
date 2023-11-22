@@ -1,5 +1,5 @@
 const express = require("express");
-const Product = require("../models/clientModel");
+
 const {
   createClient,
   getClients,
@@ -13,7 +13,7 @@ const router = express.Router();
 // create client
 router.post("/", createClient);
 
-//fetch all product
+//fetch all clients
 router.get("/", getClients);
 
 //fetch a single client
