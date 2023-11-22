@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const clientRoute = require("./routes/clientRoute");
+const invoiceRoute = require("./routes/invoiceRoute")
 const errorMiddleware = require("./middleware/errorMiddleware");
 const cors = require("cors");
 
@@ -32,6 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 //routes
 
 app.use("/api/clients", clientRoute);
+app.use("/api/invoices", invoiceRoute)
 app.get("/", (req, res) => {
   res.send("Hello world, welcome to geodevcodes API, thank you geodevcodes");
 });
