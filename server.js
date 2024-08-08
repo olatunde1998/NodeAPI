@@ -19,7 +19,6 @@ var corsOptions = {
   origin: [
     "https://travel-manager-app.vercel.app",
     "http://localhost:3000",
-    "https://travel-manager-app-jade.vercel.app/",
     "http://localhost:3001",
     FRONTEND,
   ], // this is for multiple url you wish
@@ -36,9 +35,6 @@ app.use("/api/clients", clientRoute);
 app.use("/api/invoices", invoiceRoute)
 app.get("/", (req, res) => {
   res.send("Hello world, welcome to geodevcodes API, thank you geodevcodes");
-});
-app.get("/blog", (req, res) => {
-  res.send("Hello world, thank you Rasheed blog route");
 });
 
 app.use(errorMiddleware);
