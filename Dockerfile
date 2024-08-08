@@ -1,9 +1,9 @@
-FROM node:20
+FROM node:14
 ENV NODE_ENV=production
-WORKDIR /app
+WORKDIR /
 # COPY ["package.json", "package-lock.json*", "./"]
 COPY package*.json ./
-RUN npm install --production
+RUN npm install
 COPY . .
 EXPOSE 3000
 
